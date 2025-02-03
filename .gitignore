@@ -1,20 +1,22 @@
-HELP.md
+### Ignorar archivos de compilación y directorios generados por Maven ###
 target/
-!.mvn/wrapper/maven-wrapper.jar
+!mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+### Ignorar archivos generados por IDEs ###
+
+### STS (Spring Tool Suite) ###
 .apt_generated
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
@@ -25,9 +27,28 @@ target/
 /dist/
 /nbdist/
 /.nb-gradle/
+
+### Eclipse ###
+.metadata/
+bin/
+tmp/
+
+### Gradle Build ###
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+### Ignorar configuraciones de VS Code ###
 .vscode/
+
+### Ignorar archivos innecesarios del sistema operativo ###
+.DS_Store
+Thumbs.db
+*.bak
+*.swp
+*.swo
+
+### Ignorar archivos de entorno y logs ###
+.env
+*.log
+hs_err_pid*
